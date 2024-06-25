@@ -1,0 +1,8 @@
+.formik {
+  display: flex;
+  flex-direction: column;
+  max-width: 200px;
+  gap: 4px;
+  padding: 12px;
+  outline: auto;
+}
