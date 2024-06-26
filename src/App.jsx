@@ -3,11 +3,13 @@ import SearchBox from "./components/SearchBox/SearchBox";
 import ContactForm from "./components/ContactForm/ContactForm";
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";
-import { fetchContacts } from "./redux/contactsOps";
+import { fetchContacts } from "./redux/contact/contactsOps";
 import {
   selectContactsError,
   selectContactsLoading,
-} from "./redux/contactsSlice";
+} from "./redux/contact/contactsSlice";
+import RegistrationForm from "./components/RegistrationForm/RegistrationForm";
+import LoginForm from "./components/LoginForm/LoginForm";
 
 export default function App() {
   const dispatch = useDispatch();
@@ -24,6 +26,8 @@ export default function App() {
       {loading && <p>Loading...</p>}
       {error && <p>Opps! Please try again!</p>}
       <ContactList />
+      <RegistrationForm />
+      <LoginForm />
     </div>
   );
 }
