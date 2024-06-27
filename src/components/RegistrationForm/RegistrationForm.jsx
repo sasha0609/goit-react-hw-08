@@ -17,16 +17,7 @@ export default function RegistrationForm() {
   };
   const dispatch = useDispatch();
   const handleSubmit = (values, actions) => {
-    dispatch(
-      register(
-        values
-        // {
-        // name: values.name,
-        // email: values.email,
-        // password: values.password,
-        // }
-      )
-    );
+    dispatch(register(values));
 
     actions.resetForm();
   };

@@ -29,7 +29,7 @@ export default function ContactForm() {
   const numberId = useId();
   const handleSubmit = (values, actions) => {
     handleAddContact({
-      // id: Date.now(),
+      id: Date.now(),
       name: values.name,
       number: values.number,
     });
