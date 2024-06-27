@@ -25,9 +25,7 @@ export default function LoginForm() {
       .email("Invalid email format")
       .required("Email is required"),
     password: Yup.string()
-      .min(8, "Password must be at least 8 characters")
-      .matches(/[a-z]/, "Password must contain at least one lowercase letter")
-      .matches(/[0-9]/, "Password must contain at least one digit")
+      .min(6, "Password must be at least 8 characters")
       .required("Password is required"),
   });
   return (
