@@ -62,7 +62,6 @@ export default function RegistrationForm() {
         <Field type="password" name="password" id={passwordId}></Field>
         <ErrorMessage name="password" component="span" />
         <button type="submit">Register</button>
-        помилки
       </Form>
     </Formik>
   );
