@@ -1,6 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { act } from "react";
-import { login, logOut, refreshUser, register } from "./operation";
+import { login, logOut, refreshUser, register } from "./operations";
 
 const pending = (state) => {
   state.isLoading = true;

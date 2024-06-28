@@ -19,7 +19,7 @@ const authPersistConfig = {
   whitelist: ["token"],
 };
 
-import { contactReducer } from "./contact/contactsSlice";
+import { contactReducer } from "./contact/slice";
 import { filterReducer } from "./filter/filtersSlice";
 
 export const store = configureStore({
