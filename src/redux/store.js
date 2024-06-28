@@ -1,11 +1,3 @@
-// export const store = configureStore({
-//   reducer: {
-//     contacts: contactReducer,
-//     filter: filterReducer,
-//     auth: authReducer,
-//   },
-// });
-
 import { configureStore } from "@reduxjs/toolkit";
 import {
   persistStore,
