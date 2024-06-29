@@ -6,8 +6,7 @@ import css from "./AppBar.module.css";
 import { selectIsLoggedIn } from "../../redux/auth/selector";
 
 export default function AppBar() {
-  const { isLoggedIn } = useSelector(selectIsLoggedIn);
-  console.log("AppBar Is Logged In:", isLoggedIn); // Додано для діагностики
+  const isLoggedIn = useSelector(selectIsLoggedIn);
 
   return (
     <header className={css.header}>
